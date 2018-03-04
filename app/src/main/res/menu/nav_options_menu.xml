@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/firstGroup"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_nav_email"
+            android:icon="@android:drawable/ic_dialog_email"
+            android:title="@string/email_title"/>
+        <item
+            android:id="@+id/menu_nav_alerts"
+            android:icon="@android:drawable/ic_dialog_alert"
+            android:title="@string/alerts_title"/>
+        <item
+            android:id="@+id/menu_nav_information"
+            android:icon="@android:drawable/ic_dialog_info"
+            android:title="@string/information_title"/>
+    </group>
+    <group
+        android:id="@+id/secondGroup"
+        android:checkableBehavior="none">
+        <item xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/menu_nav_option"
+            android:title="@string/option_title"
+            app:actionLayout="@layout/switch_nav"/>
+    </group>
+</menu>
